@@ -1,9 +1,8 @@
 function change(val) 
          { 
-             document.getElementById("result").value+=val 
+             document.getElementById("result").value+=(val )
          } 
            
-         //function that evaluates the digit and return result 
          function solve() 
          { 
              let x = document.getElementById("result").value 
@@ -11,8 +10,10 @@ function change(val)
              document.getElementById("result").value = y 
          } 
            
-         //function that clear the display 
          function clr() 
          { 
              document.getElementById("result").value = "" 
          } 
+
+
+      

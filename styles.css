@@ -35,6 +35,12 @@ html, body {
   }
 .numbers button{ 
   position: relative;
-  margin: 15px;
+  margin: 13px;
+
+}
+.operators button{
+  position: relative;
+  margin-right: 30px;
+  margin-bottom: 6px;
 
 }
