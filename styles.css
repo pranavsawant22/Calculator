@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 html, body {
     margin: 0;
     padding: 0;
@@ -7,6 +8,33 @@ html, body {
     display:  block;
     top: 0;
     left: 0;
-    z-index: 0;
+    z-index: -1;
     background: url('/images/aurora.jpg') no-repeat;
   } 
+  h1{
+    font-family: 'Bangers', cursive;
+    font-weight: bold;
+   
+  }
+  .head{
+    margin-top: 50px;
+  }
+  .main{
+  
+      height: 490px;
+      border: 1px solid black;
+      position: relative;
+      background-color: rgb(100, 104, 96);
+  }
+  .disp-area{
+      position: absolute;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      height: 50px;
+      border: 1px solid black;
+  }
+.numbers button{ 
+  position: relative;
+  margin: 15px;
+
+}

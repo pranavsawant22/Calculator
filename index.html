@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Pranav</title>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+ 
+
 </head>
 <body>
+<header class="header head">
+    <div class="container head"><h1 class="text-center text-white">CalCulatoR</h1></div>
     
+</header>
+
+<div class="container main col-4 offset-4">
+    
+        <input type="text" class="disp-area container col-12" id="result"/>
+
+
+
+    <div class="numbers-operators">
+        <div class="numbers">
+<button class="btn btn-info col-3" onclick="change('0')" id="num">0</button>
+<button class="btn btn-info col-3" onclick="change('1')"  id="num">1</button>
+<button class="btn btn-info col-3" onclick="change('2')"  id="num">2</button>
+<button class="btn btn-info col-3" onclick="change('3')" id="num">3</button>
+<button class="btn btn-info col-3" onclick="change('4')" id="num">4</button>
+<button class="btn btn-info col-3" onclick="change('5')" id="num">5</button>
+<button class="btn btn-info col-3" onclick="change('6')" id="num">6</button>
+<button class="btn btn-info col-3" onclick="change('7')" id="num">7</button>
+<button class="btn btn-info col-3" onclick="change('8')"id="num">8</button>
+<button class="btn btn-info col-3" onclick="change('9')" id="num">9</button></div>
+  
+</div>
+<div class="operators">
+    <button class="btn btn-danger col-2" onclick="change('+')" id="plus">+</button>
+<button class="btn btn-danger col-2 " onclick="change('-')" id="minus" v>-</button>
+<button class="btn btn-danger col-2" onclick="change('*')" id="multiply">*</button>
+<button class="btn btn-danger col-2" onclick="change('/')" id="divide">/</button>
+<button class="btn btn-success col-12" onclick="solve()" id="equals">=</button>
+<button class="btn btn-warning col-12" onclick="clr()" id="clear">AC</button>  
+</div>
+</div>
+    <canvas class="background"></canvas>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+
+    <script>
+     window.onload = function() {
+Particles.init({
+  selector: '.background',connectParticles:true,color:'#ffffff',maxParticles:150
+});
+};
+</script>
+
 </body>
 </html>
